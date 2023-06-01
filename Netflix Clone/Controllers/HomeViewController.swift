@@ -16,7 +16,7 @@ class HomeViewController: UIViewController{
         table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier:  "CollectionViewTableViewCell")
         return table
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -32,15 +32,24 @@ class HomeViewController: UIViewController{
     }
     
     private func configureNavbar() {
-        var image = UIImage(named: "netflixLogo")
-        image = image?.withRenderingMode(.alwaysOriginal)
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image:UIImage(systemName: "shazam.logo"), style: .done, target: self, action: nil)
+        let leftNavBarImageView = UIImageView()
+                leftNavBarImageView.image = UIImage(named: "netflixLogo")
+                leftNavBarImageView.contentMode = .scaleAspectFill
+                leftNavBarImageView.clipsToBounds = true
+                leftNavBarImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true // set image view width constraint
+                leftNavBarImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true // set image view height constraint
+                navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftNavBarImageView) // add left bar button custom view
+        
+//        var image = UIImage(named: "netflixLogo")
+//        image = image?.withRenderingMode(.alwaysOriginal)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(image:UIImage(systemName: "person"), style: .done, target: self, action: nil)
         
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(image:UIImage(systemName: "person"), style: .done, target: self, action: nil),
-            UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+            UIBarButtonItem(image:UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
         ]
+        
         navigationController?.navigationBar.tintColor = .white
     }
     
