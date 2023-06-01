@@ -37,7 +37,7 @@ class HomeViewController: UIViewController{
                 leftNavBarImageView.image = UIImage(named: "netflixLogo")
                 leftNavBarImageView.contentMode = .scaleAspectFill
                 leftNavBarImageView.clipsToBounds = true
-                leftNavBarImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true // set image view width constraint
+                leftNavBarImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true // set image view width constraint
                 leftNavBarImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true // set image view height constraint
                 navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftNavBarImageView) // add left bar button custom view
         
