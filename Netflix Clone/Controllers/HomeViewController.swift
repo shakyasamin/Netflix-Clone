@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController{
     
     
-    let sectionTitle: [String] = ["Trending Movie","Popular","Trending Tv", "Upcoming Movie", "Top rated"]
+    let sectionTitle: [String] = ["Trending Movie", "Trending Tv", "Popular", "Upcoming Movie", "Top rated"]
     
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero,style: .grouped)
@@ -31,22 +31,22 @@ class HomeViewController: UIViewController{
         let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView = headerView
         
-        getTrendingMovies()
+        fetchData()
     }
     
     private func configureNavbar() {
         
         let leftNavBarImageView = UIImageView()
-                leftNavBarImageView.image = UIImage(named: "netflixLogo")
-                leftNavBarImageView.contentMode = .scaleAspectFill
-                leftNavBarImageView.clipsToBounds = true
-                leftNavBarImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true // set image view width constraint
-                leftNavBarImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true // set image view height constraint
-                navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftNavBarImageView) // add left bar button custom view
+        leftNavBarImageView.image = UIImage(named: "netflixLogo")
+        leftNavBarImageView.contentMode = .scaleAspectFill
+        leftNavBarImageView.clipsToBounds = true
+        leftNavBarImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true // set image view width constraint
+        leftNavBarImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true // set image view height constraint
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftNavBarImageView) // add left bar button custom view
         
-//        var image = UIImage(named: "netflixLogo")
-//        image = image?.withRenderingMode(.alwaysOriginal)
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(image:image, style: .done, target: self, action: nil)
+        //        var image = UIImage(named: "netflixLogo")
+        //        image = image?.withRenderingMode(.alwaysOriginal)
+        //        navigationItem.leftBarButtonItem = UIBarButtonItem(image:image, style: .done, target: self, action: nil)
         
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(image:UIImage(systemName: "person"), style: .done, target: self, action: nil),
@@ -60,14 +60,31 @@ class HomeViewController: UIViewController{
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
     }
-    private func getTrendingMovies(){
-        Apicaller.shared.getTrendingMoview{ results in
-            switch results {
-            case .success(let movies):
-                print(movies)
-            case .failure(let error):
-                print(error)
-            }
+    private func fetchData(){
+        
+        //        Apicaller.shared.getTrendingMovie{ results in
+        //            switch results {
+        //            case .success(let movies):
+        //                print(movies)
+        //            case .failure(let error):
+        //                print(error)
+        //            }
+        //        }
+        
+        //        Apicaller.shared.getTrendingTv{ results in
+        //            //
+        //        }
+        
+        //        Apicaller.shared.getUpcomingMovies { result in
+        //            //
+        //        }
+        
+//        Apicaller.shared.getpopular { result in
+//            //
+//        }
+        
+        Apicaller.shared.getTopRated { result in
+            //
         }
     }}
 
@@ -101,7 +118,7 @@ extension HomeViewController: UITableViewDelegate , UITableViewDataSource {
         header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
         header.textLabel?.textColor = .white
-        header.textLabel?.text = header.textLabel?.text?.lowercased()
+        header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetters()
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
