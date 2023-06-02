@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2811DEFA2A29AA8F0024CB4B /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811DEF92A29AA8F0024CB4B /* APICaller.swift */; };
+		2811DEFC2A29B34F0024CB4B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811DEFB2A29B34F0024CB4B /* Movie.swift */; };
 		28580B952A27002A00DA44DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28580B942A27002A00DA44DF /* AppDelegate.swift */; };
 		28580B972A27002A00DA44DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28580B962A27002A00DA44DF /* SceneDelegate.swift */; };
 		28580B992A27002A00DA44DF /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28580B982A27002A00DA44DF /* MainTabBarViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2811DEF92A29AA8F0024CB4B /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		2811DEFB2A29B34F0024CB4B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		28580B912A27002A00DA44DF /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28580B942A27002A00DA44DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28580B962A27002A00DA44DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 		28580BB32A270CB100DA44DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2811DEFB2A29B34F0024CB4B /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 		28580BB52A270CDD00DA44DF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				2811DEF92A29AA8F0024CB4B /* APICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -203,11 +209,13 @@
 				28580BAE2A27043500DA44DF /* SearchViewController.swift in Sources */,
 				28580B992A27002A00DA44DF /* MainTabBarViewController.swift in Sources */,
 				28580BB72A270D0B00DA44DF /* CollectionViewTableViewCell.swift in Sources */,
+				2811DEFA2A29AA8F0024CB4B /* APICaller.swift in Sources */,
 				28580BB92A2714AA00DA44DF /* HeroHeaderUIView.swift in Sources */,
 				28580BB02A27045500DA44DF /* DownloadsViewController.swift in Sources */,
 				28580B952A27002A00DA44DF /* AppDelegate.swift in Sources */,
 				28580BAC2A27041B00DA44DF /* UpcommingViewController.swift in Sources */,
 				28580B972A27002A00DA44DF /* SceneDelegate.swift in Sources */,
+				2811DEFC2A29B34F0024CB4B /* Movie.swift in Sources */,
 				28580BAA2A2703F700DA44DF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
