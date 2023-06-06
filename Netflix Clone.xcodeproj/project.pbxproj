@@ -65,6 +65,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		284F1FB52A2F0315006A908C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				28580BA92A2703F700DA44DF /* HomeViewController.swift */,
+				28580BAB2A27041B00DA44DF /* UpcommingViewController.swift */,
+				28580BAD2A27043500DA44DF /* SearchViewController.swift */,
+				28580BAF2A27045500DA44DF /* DownloadsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		284F1FB62A2F0320006A908C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				284F1FB32A2F0255006A908C /* SearchResultsViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		28580B882A27002A00DA44DF = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +122,8 @@
 		28580BA82A2703CF00DA44DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				28580BA92A2703F700DA44DF /* HomeViewController.swift */,
-				28580BAB2A27041B00DA44DF /* UpcommingViewController.swift */,
-				28580BAD2A27043500DA44DF /* SearchViewController.swift */,
-				28580BAF2A27045500DA44DF /* DownloadsViewController.swift */,
-				284F1FB32A2F0255006A908C /* SearchResultsViewController.swift */,
+				284F1FB52A2F0315006A908C /* Core */,
+				284F1FB62A2F0320006A908C /* General */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
