@@ -72,6 +72,7 @@
 				28580BAB2A27041B00DA44DF /* UpcommingViewController.swift */,
 				28580BAD2A27043500DA44DF /* SearchViewController.swift */,
 				28580BAF2A27045500DA44DF /* DownloadsViewController.swift */,
+				28580B982A27002A00DA44DF /* MainTabBarViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -111,7 +112,6 @@
 				28580BA82A2703CF00DA44DF /* Controllers */,
 				28580B942A27002A00DA44DF /* AppDelegate.swift */,
 				28580B962A27002A00DA44DF /* SceneDelegate.swift */,
-				28580B982A27002A00DA44DF /* MainTabBarViewController.swift */,
 				28580B9D2A27002B00DA44DF /* Assets.xcassets */,
 				28580B9F2A27002B00DA44DF /* LaunchScreen.storyboard */,
 				28580BA22A27002B00DA44DF /* Info.plist */,
