@@ -11,6 +11,7 @@
 		2811DEFC2A29B34F0024CB4B /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811DEFB2A29B34F0024CB4B /* Title.swift */; };
 		2811DEFE2A29BA4E0024CB4B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811DEFD2A29BA4E0024CB4B /* Extensions.swift */; };
 		2811DF022A29F97A0024CB4B /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811DF012A29F97A0024CB4B /* TitleCollectionViewCell.swift */; };
+		284F1FB22A2EF00B006A908C /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F1FB12A2EF00B006A908C /* TitleViewModel.swift */; };
 		28580B952A27002A00DA44DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28580B942A27002A00DA44DF /* AppDelegate.swift */; };
 		28580B972A27002A00DA44DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28580B962A27002A00DA44DF /* SceneDelegate.swift */; };
 		28580B992A27002A00DA44DF /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28580B982A27002A00DA44DF /* MainTabBarViewController.swift */; };
@@ -32,6 +33,7 @@
 		2811DEFB2A29B34F0024CB4B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		2811DEFD2A29BA4E0024CB4B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2811DF012A29F97A0024CB4B /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		284F1FB12A2EF00B006A908C /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		28580B912A27002A00DA44DF /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28580B942A27002A00DA44DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28580B962A27002A00DA44DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		28580BB12A270C9500DA44DF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				284F1FB12A2EF00B006A908C /* TitleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				28580B972A27002A00DA44DF /* SceneDelegate.swift in Sources */,
 				2811DEFC2A29B34F0024CB4B /* Title.swift in Sources */,
 				28580BAA2A2703F700DA44DF /* HomeViewController.swift in Sources */,
+				284F1FB22A2EF00B006A908C /* TitleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
