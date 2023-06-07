@@ -79,7 +79,6 @@
 				28580BAD2A27043500DA44DF /* SearchViewController.swift */,
 				28580BAF2A27045500DA44DF /* DownloadsViewController.swift */,
 				28580B982A27002A00DA44DF /* MainTabBarViewController.swift */,
-				280E936A2A30439C00CACD28 /* TitlePreviewViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -87,6 +86,7 @@
 		284F1FB62A2F0320006A908C /* General */ = {
 			isa = PBXGroup;
 			children = (
+				280E936A2A30439C00CACD28 /* TitlePreviewViewController.swift */,
 				284F1FB32A2F0255006A908C /* SearchResultsViewController.swift */,
 			);
 			path = General;
