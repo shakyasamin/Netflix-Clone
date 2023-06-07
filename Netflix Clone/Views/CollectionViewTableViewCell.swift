@@ -7,6 +7,10 @@
 
 import UIKit
 
+
+
+
+
 class CollectionViewTableViewCell: UITableViewCell{
     
     
@@ -69,5 +73,22 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
                  
         cell.configure(with: model)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        let title = titles[indexPath.row]
+        guard let titleName = title.original_name ?? title.original_title else {
+            return
+        }
+        Apicaller.shared.getMovie(with: titleName + "trailer") { result in
+            switch result {
+            case .success(let videoElement):
+                print(videoElement.id)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
